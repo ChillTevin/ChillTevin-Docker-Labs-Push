@@ -1,4 +1,4 @@
-FROM tomillo037/tomexarch:kde_v1.8_montain_march
+FROM tomillo037/tomexarch:kde_v.1.5_power_edition_lite
 
 # Copiar script de inicio
 COPY entrypoint.sh /usr/local/bin/entrypoint.sh
