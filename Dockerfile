@@ -1,5 +1,5 @@
 # Imagen base: tu propia imagen en Docker Hub
-FROM tomillo037/tomexarch:kde_v.1.7_kobenipower_edition_lite
+FROM tomillo037/tomexarch:kde_v.1.5_power_edition_lite
 
 # Copiar el script de inicio al contenedor
 COPY entrypoint.sh /usr/local/bin/entrypoint.sh
