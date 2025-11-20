@@ -1,0 +1,8 @@
+FROM tomillo037/tomexarch:kde_v1.8_montain_march
+
+# Copiar script de inicio
+COPY entrypoint.sh /usr/local/bin/entrypoint.sh
+RUN chmod +x /usr/local/bin/entrypoint.sh
+
+# Definir entrypoint
+ENTRYPOINT ["/usr/local/bin/entrypoint.sh"]
