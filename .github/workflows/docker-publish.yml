@@ -1,7 +1,7 @@
 name: Build and Push Docker Image
 
 on:
-  workflow_dispatch:   # Se ejecuta manualmente desde GitHub
+  workflow_dispatch:   # Permite lanzarlo manualmente desde GitHub
     inputs:
       tag:
         description: "Tag de la imagen (ej: latest, dev, v1.0)"
