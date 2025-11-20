@@ -17,6 +17,10 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+
+    - name: Verificar Dockerfile
+      run: ls -l
+
       - name: Checkout del repo
         uses: actions/checkout@v4
 
