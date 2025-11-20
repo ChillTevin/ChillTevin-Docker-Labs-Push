@@ -21,8 +21,8 @@ jobs:
     steps:
     - name: Limpiar espacio en runner
       run: |
-    docker system prune -af
-    docker volume prune -f
+       docker system prune -af
+       docker volume prune -f
 
       - name: Checkout del repo
         uses: actions/checkout@v4
