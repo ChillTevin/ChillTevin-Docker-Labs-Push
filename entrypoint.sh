@@ -10,4 +10,4 @@ sudo xrdpArch start &
 # Mantener el contenedor vivo por 6 horas (21600 segundos)
 sleep 21600
 
-echo "Tiempo de sesión terminado, cerrando workflow..."
+echo "prueba"
