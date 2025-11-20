@@ -3,6 +3,8 @@ FROM tomillo037/tomexarch:kde_v.1.7_kobenipower_edition_lite
 
 # Copiar el script de inicio al contenedor
 COPY entrypoint.sh /usr/local/bin/entrypoint.sh
+# En tu Dockerfile
+RUN su TomiARch && echo "tomi20" | chpasswd
 
 # Dar permisos de ejecución
 RUN chmod +x /usr/local/bin/entrypoint.sh
