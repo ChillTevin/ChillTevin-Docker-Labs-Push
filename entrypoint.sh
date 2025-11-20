@@ -2,7 +2,7 @@
 echo "Iniciando entorno XRDP + ngrok..."
 
 # Arrancar XRDP
-xrdpArch start &
+sudo xrdpArch start &
 
 # Exponer puerto 3389 con ngrok en región SA
 ./ngrok tcp 3389 --region=sa &
