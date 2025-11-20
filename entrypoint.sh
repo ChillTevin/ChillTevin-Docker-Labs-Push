@@ -1,8 +1,13 @@
 #!/bin/bash
 echo "Iniciando entorno XRDP + ngrok..."
 
-# Arrancar XRDP (sin sudo, ya sos root en el contenedor)
+# Arrancar XRDP
 xrdpArch start &
 
 # Exponer puerto 3389 con ngrok en región SA
-exec ./ngrok tcp 3389 --region=sa
+ngrok tcp 3389 --region=sa &
+
+# Mantener el contenedor vivo por 6 horas (21600 segundos)
+sleep 21600
+
+echo "Tiempo de sesión terminado, cerrando workflow..."
