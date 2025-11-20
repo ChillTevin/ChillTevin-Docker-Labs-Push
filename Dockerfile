@@ -3,8 +3,9 @@ FROM tomillo037/tomexarch:kde_v.1.5_power_edition_lite
 
 # Copiar el script de inicio al contenedor
 COPY entrypoint.sh /usr/local/bin/entrypoint.sh
-# En tu Dockerfile
-RUN su TomiARch && echo "tomi20" | chpasswd
+
+# Usar directamente el usuario ya creado
+USER TomiARch
 
 # Dar permisos de ejecución
 RUN chmod +x /usr/local/bin/entrypoint.sh
